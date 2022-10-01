@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.dgvGokCisimleri = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGokCisimleri)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // dgvGokCisimleri
+            // 
+            this.dgvGokCisimleri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGokCisimleri.Location = new System.Drawing.Point(12, 12);
+            this.dgvGokCisimleri.Name = "dgvGokCisimleri";
+            this.dgvGokCisimleri.RowTemplate.Height = 25;
+            this.dgvGokCisimleri.Size = new System.Drawing.Size(776, 274);
+            this.dgvGokCisimleri.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvGokCisimleri);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGokCisimleri)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private DataGridView dgvGokCisimleri;
     }
 }
