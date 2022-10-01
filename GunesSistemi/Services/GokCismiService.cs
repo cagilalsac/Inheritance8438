@@ -47,7 +47,11 @@ namespace GunesSistemi.Services
                 Adi = "Güneş",
                 Id = 0,
                 SicaklikC = 2000,
-                YariCap = 5000
+                YariCap = 5000,
+                GezegenIdleri = new int[]
+                {
+                    3
+                }
             };
             gokCisimleri[0] = _gokCismi;
             _gokCismi = new Gezegen()
@@ -56,7 +60,11 @@ namespace GunesSistemi.Services
                 Id = 3,
                 YariCap = 500,
                 YasamVarMi = true,
-                YildizId = 0
+                YildizId = 0,
+                UyduIdleri = new int[]
+                {
+                    11
+                }
             };
             gokCisimleri[1] = _gokCismi;
             _gokCismi = new Uydu()
