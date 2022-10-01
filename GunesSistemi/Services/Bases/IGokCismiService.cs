@@ -10,5 +10,6 @@ namespace GunesSistemi.Services.Bases
     public interface IGokCismiService
     {
         GokCismiBase[] Listele();
+        GokCismiBase DetayGetir(int id);
     }
 }

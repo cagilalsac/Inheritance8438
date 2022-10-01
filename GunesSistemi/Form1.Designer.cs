@@ -35,11 +35,16 @@
             // dgvGokCisimleri
             // 
             this.dgvGokCisimleri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGokCisimleri.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvGokCisimleri.Location = new System.Drawing.Point(12, 12);
+            this.dgvGokCisimleri.MultiSelect = false;
             this.dgvGokCisimleri.Name = "dgvGokCisimleri";
             this.dgvGokCisimleri.RowTemplate.Height = 25;
+            this.dgvGokCisimleri.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvGokCisimleri.Size = new System.Drawing.Size(776, 274);
             this.dgvGokCisimleri.TabIndex = 0;
+            this.dgvGokCisimleri.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGokCisimleri_CellClick);
+          
             // 
             // Form1
             // 

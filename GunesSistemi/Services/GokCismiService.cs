@@ -1,4 +1,6 @@
-﻿using GunesSistemi.Models;
+﻿#nullable disable
+
+using GunesSistemi.Models;
 using GunesSistemi.Models.Bases;
 using GunesSistemi.Services.Bases;
 using System;
@@ -12,6 +14,21 @@ namespace GunesSistemi.Services
     public class GokCismiService : IGokCismiService
     {
         GokCismiBase _gokCismi;
+
+        public GokCismiBase DetayGetir(int id)
+        {
+            _gokCismi = null;
+            GokCismiBase[] gokCisimleri = Listele();
+            foreach (GokCismiBase gokCismi in gokCisimleri)
+            {
+                if (gokCismi.Id == id)
+                {
+                    _gokCismi = gokCismi;
+                    break;
+                }
+            }
+            return _gokCismi;
+        }
 
         public GokCismiBase[] Listele()
         {
